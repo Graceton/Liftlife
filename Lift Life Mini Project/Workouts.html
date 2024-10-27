@@ -1,0 +1,79 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Workout GUI</title>  
+    <link rel="stylesheet" href="Workouts.css">  
+</head>  
+<body>
+    <!-- Top Navigation Bar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="/Images/Logo.png" alt="Logo" width="100px" height="100px">
+        </div>
+        <div class="menu">
+            <a href="/Homepage/HomePage.html">HOME</a>
+            <a href="/Workouts.html">EXERCISES</a>
+            <a href="/About.html">ABOUT US</a>
+            <a href="Settings.html">SETTINGS</a>
+        </div>
+        <div class="join-now">
+            <a href="/Settings.html" target="_blank">JOIN NOW</a>
+        </div>
+    </div>
+</body>
+  
+    </header>  
+
+    <main style="margin-top: 170px;">
+
+        <h1>WE PROVIDE A WIDE RANGE OF EXERCISES AND WORKOUT TYPES:</h1>  
+        
+        <!-- First Row of Cards -->
+        <div class="card-container" >  
+            <a href='/core exercises/Core_Exer.html'>
+            <div class="card" style="background-image: url('/Images/Core\ exercise\ card.png');cursor:pointer;">  
+            </div>  
+            <a href='/Arm_exer.html'></a>
+            <div class="card" style="background-image: url('/Images/ARM\ EXER.png');cursor:pointer;">  
+            </div>   
+        </div>  
+
+        <!-- Second Row of Cards -->
+        <div class="card-container">  
+            <a href='/Core_exer.html'>
+            <div class="card" style="background-image: url('/Images/BODYWEIGHT\ .png');cursor:pointer;">  
+            </div>  
+            <a href='/Arm_exer.html'></a>
+            <div class="card" style="background-image: url('/Images/Plyometric.png');cursor:pointer;">  
+            </div>   
+        </div>  
+
+        <!-- Third Row of Cards -->
+        <div class="card-container">  
+            <a href='/Core_exer.html'>
+            <div class="card" style="background-image: url('');cursor:pointer;">  
+            </div>  
+            <a href='/Arm_exer.html'></a>
+            <div class="card" style="background-image: url('/Images/Yoga\ card.png');cursor:pointer;">  
+            </div>   
+        </div>  
+    
+    </main>  
+    <script src="Workouts.js"></script>  
+    <script src="Settings.js"></script>
+
+
+    <script>
+        function navigateTo(url) {
+            if (url) {
+                window.location.href = url;
+            } else {
+                console.log("No URL specified for this card");
+            }
+        }
+    </script>
+
+</body>  
+</html>

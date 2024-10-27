@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Off-white background for light mode */
+    color: #333;
+    margin: 0;
+}
+
+/* Dark mode styling */
+body.dark-mode {
+    background-color: #121212; /* Dark background for dark mode */
+    color: #fff; /* Light text color for dark mode */
+}
+
+body.light-mode {
+    background-color: #f2f2f2; /* Original light background */
+    color: #333;
+}
+
+header {
+    background-color: #00a1f1;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a.active {
+    text-decoration: underline;
+}
+
+.settings-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark mode styling for settings container */
+body.dark-mode .settings-container {
+    background-color: #333; /* Darker container background */
+    color: #fff; /* Light text color inside the container */
+}
+
+body.light-mode .settings-container {
+    background-color: #fff;
+    color: #333;
+}
+
+.settings-section {
+    margin-bottom: 20px;
+}
+
+.settings-section label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 30px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #00a1f1;
+}
+
+input:checked + .slider:before {
+    transform: translateX(30px);
+}
+
+.dark-button {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dark-button:hover {
+    background-color: #555;
+}
+
+/* Device modes (for illustration) */
+body.mobile-mode {
+    font-size: 14px;
+}
+
+body.tablet-mode {
+    font-size: 16px;
+}
+
+body.laptop-mode {
+    font-size: 18px;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plank Exercise</title>
+    <link rel="stylesheet" href="/core exercises/core_exer_crunch.css"> <!-- Link to CSS file -->
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="/Images/Logo.png" alt="Logo" width="100px" height="100px">
+        </div>
+        <div class="menu">
+            <a href="/Homepage/HomePage.html">HOME</a>
+            <a href="/Workouts.html">WORKOUTS</a>
+            <a href="/About.html">ABOUT US</a>
+            <a href="/Settings.html">SETTINGS</a>
+        </div>
+        <div class="join-now">
+            <a href="/Homepage/Login.html" target="_blank">JOIN NOW</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>CRUNCHES EXERCISE</h1>
+        <p class="description">Crunches are a classic abdominal exercise that targets the rectus abdominis, obliques, and transverse abdominis, strengthening the core and improving stability.</p>
+        
+        <div class="exercise-section">
+            <div class="video-container">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/O0pIQ2UqeCY" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="steps">
+                <h2>STEP-BY-STEP EXPLANATION:</h2>
+                <ol>
+                    <li>Lie on your back with your knees bent and feet flat on the floor, hip-width apart.</li>
+                    <li>Place your hands behind your head, lightly touching your temples.</li>
+                    <li>Lift your upper body off the floor, curling your spine towards your hips.</li>
+                    <li>Lower your upper body back to the starting position, but don't fully rest your back on the floor.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="input-section">
+            <div class="input-field">
+                <label for="Crunches-done">Crunches done:</label>
+                <input type="number" id="Crunches-done" placeholder="0"> 
+            </div>
+            
+            <div class="input-field">
+                <label for="sets-done">SETS DONE:</label>
+                <input type="number" id="sets-done" placeholder="0">
+            </div>
+
+            <div class="output-field">
+                <label for="calories-burnt">ESTIMATED CALORIES BURNT:</label>
+                <input type="text" id="calories-burnt" placeholder="0" readonly> kcal
+            </div>
+        </div>
+    </div>
+
+    <script src="/core exercises/core_exer_crunch.js"></script> <!-- Link to JS file -->
+</body>
+</html>

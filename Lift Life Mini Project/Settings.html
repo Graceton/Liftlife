@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings Page</title>
+    <link rel="stylesheet" href="Settings.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/Homepage/HomePage.html">HOME</a></li>
+                <li><a href="Workouts.html">EXERCISES</a></li>
+                <li><a href="/About.html">ABOUT US</a></li>
+                <li><a href="Settings.html" class="active">SETTINGS</a></li>
+                <li><a href="/Homepage/Login.html">LOGIN</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="settings-container">
+        <h1>Settings</h1>
+
+        <!-- Corrected id: country -->
+        <div class="settings-section">
+            <label for="country-select">Country:</label>
+            <select id="country-select">
+                <option value="IND">India</option>
+                <option value="US">United States</option>
+                <option value="UK">United Kingdom</option>
+                <option value="ESP">France</option>
+                <!-- Add more countries -->
+            </select>
+        </div>
+
+        <!-- Corrected id: timezone -->
+        <div class="settings-section">
+            <label for="timezone-select">Timezone:</label>
+            <select id="timezone-select">
+                <option value="pst">PST (Pacific Standard Time)</option>
+                <option value="est">EST (Eastern Standard Time)</option>
+                <!-- Add more timezones -->
+            </select>
+        </div>
+
+        <!-- Added id: language-select -->
+        <div class="settings-section">
+            <label for="language-select">Language:</label>
+            <select id="language-select">
+                <option value="english">English</option>
+                <option value="spanish">Spanish</option>
+                <option value="Hindi">Hindi</option>
+                <!-- Add more languages -->
+            </select>
+        </div>
+
+        <!-- Radio buttons unchanged -->
+        <div class="settings-section">
+            <label>Unit System:</label>
+            <div>
+                <input type="radio" id="metric" name="unit-system" checked>
+                <label for="metric">Metric</label>
+                <input type="radio" id="imperial" name="unit-system">
+                <label for="imperial">Imperial</label>
+            </div>
+        </div>
+
+        <!-- Corrected id: theme-toggle -->
+        <div class="settings-section">
+            <label>Light/Dark Mode:</label>
+            <label class="switch">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <!-- Added id: device-select -->
+        <div class="settings-section">
+            <label for="device-select">Device Mode:</label>
+            <select id="device-select">
+                <option value="mobile">Mobile</option>
+                <option value="tablet">Tablet</option>
+                <option value="laptop">Laptop</option>
+            </select>
+        </div>
+
+        <div class="settings-section">
+            <a href="Index.html">
+                <button class="dark-button">Login</button>
+            </a>
+            <a href="Index.html">
+                <button class="dark-button">Sign Up</button>
+            </a>
+        </div>
+        
+
+    <script src="Settings.js"></script>
+</body>
+</html>

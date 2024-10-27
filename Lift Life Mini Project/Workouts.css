@@ -1,0 +1,126 @@
+    /* Global Styles */
+    body {  
+        margin: 0;  
+        font-family: Arial, sans-serif;  
+        background: linear-gradient(to bottom, #00BFFF, #87CEFA);  
+        color: #000;  
+    }  
+
+    header {  
+        display: flex;  
+        justify-content: space-between;  
+        align-items: center;  
+        background-color: #006eff;  
+        padding: 10px 20px;  
+    }  
+    /* Global Styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+        background-color: #00a1f1;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+    }
+
+    /* Add space at the top so content isn't hidden by the navbar */
+    .content {
+        margin-top: 120px; /* Adjust this value based on your navbar height */
+    }
+
+    .logo img {
+        border-radius: 10px;
+    }
+
+    .menu a {
+        color: white;
+        margin-right: 20px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .menu a:hover {
+        text-decoration: underline;
+    }
+
+    .join-now a {
+        background-color: #1e81b0;
+        padding: 10px 20px;
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .join-now a:hover {
+        background-color: #16607a;
+    }
+
+    h1 {  
+        text-align: center;  
+        margin: 20px 0;  
+    }  
+
+    .card-container {  
+        display: flex;  
+        justify-content: center;  
+        margin: 20px 0;  
+        /* background-image: url('C:\Users\Gilbert\Desktop\Gym_Management_System\Gym management System\src\Gym_management\Images\Arm exercises.png');  */
+
+    }  
+
+    .card {  
+        /* background-color: #0000FF;  Change color as needed */
+        color: white;  
+        width: 200px;  
+        height: 300px;  
+        margin: 10px;  
+        padding: 20px;  
+        border-radius: 10px;  
+        display: flex;  
+        flex-direction: column;  
+        justify-content: center;  
+        align-items: center;  
+        text-align: center;  
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+        transition: transform 0.3s ease, box-shadow 0.3s ease; 
+        background-size:cover;
+    }  
+
+    .card:hover {  
+        transform: translateY(-10px);  
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2),   
+                    0 20px 30px rgba(0, 0, 0, 0.3),   
+                    0 30px 40px rgba(0, 0, 0, 0.4);  
+    }  
+
+    /* .card img {  
+        width: 100%;   
+        height: auto;  
+        object-fit: cover;
+        border-radius: 10px;
+    }   */
+
+    .card h2 {  
+        margin: 10px 0;  
+        font-size: 18px;  
+    }  
+
+    .card p {  
+        font-size: 14px;  
+        color: white;  
+    }

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plank Exercise</title>
+    <link rel="stylesheet" href="/core exercises/core_exer_plank.css"> <!-- Link to CSS file -->
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="/Images/Logo.png" alt="Logo" width="100px" height="100px">
+        </div>
+        <div class="menu">
+            <a href="/Homepage/HomePage.html">HOME</a>
+            <a href="/Workouts.html">WORKOUTS</a>
+            <a href="/About.html">ABOUT US</a>
+            <a href="/Settings.html">SETTINGS</a>
+        </div>
+        <div class="join-now">
+            <a href="/Homepage/Login.html" target="_blank">JOIN NOW</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>PLANK EXERCISE</h1>
+        <p class="description">The plank is an isometric core strength exercise that involves maintaining a position similar to a push-up for the maximum possible time.</p>
+        
+        <div class="exercise-section">
+            <div class="video-container">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/IR0yV_3DfBo" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="steps">
+                <h2>STEP-BY-STEP EXPLANATION:</h2>
+                <ol>
+                    <li>Start in a push-up position with your elbows bent at a 90-degree angle.</li>
+                    <li>Keep your body in a straight line from head to heels.</li>
+                    <li>Hold the position for as long as you can, keeping your core tight.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="input-section">
+            <div class="input-field">
+                <label for="time-held">TIME HELD:</label>
+                <input type="number" id="time-min" placeholder="mins"> 
+                <input type="number" id="time-sec" placeholder="secs">
+            </div>
+            
+            <div class="input-field">
+                <label for="sets-done">SETS DONE:</label>
+                <input type="number" id="sets-done" placeholder="0">
+            </div>
+
+            <div class="output-field">
+                <label for="calories-burnt">ESTIMATED CALORIES BURNT:</label>
+                <input type="text" id="calories-burnt" placeholder="0" readonly> kcal
+            </div>
+        </div>
+    </div>
+
+    <script src="/core exercises/core_exer_plank.js"></script> <!-- Link to JS file -->
+</body>
+</html>

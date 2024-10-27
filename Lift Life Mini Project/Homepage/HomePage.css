@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #00a1f1;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    border-radius: 10px;
+}
+
+.menu a {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.join-now a {
+    background-color: #1e81b0;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.join-now a:hover {
+    background-color: #16607a;
+}
+
+.main-content {
+    background-color: #6b4226;
+    margin-top: 100px; /* To prevent overlap with the navbar */
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    color: white;
+    text-align: center;
+}
+
+/* .left-image img,*/ .right-image img { 
+    background-color: #0000ff;
+    display: block;
+    border-radius: 10px;
+}
+
+.center-content {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.center-content h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.center-content p {
+    margin-top: 10px;
+    font-size: 20px;
+    color: black;
+}
+/* Feature Section */
+.feature-section {
+    background-color: #1c1c1c; /* Shiny black background for gym-like look */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.feature-container.reverse {
+    flex-direction: row-reverse;
+}
+
+.feature-text {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.feature-text h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #f39c12; /* A bright accent color for headings */
+}
+
+.feature-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #dcdcdc;
+}
+
+.feature-image {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.feature-image img {
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* For smaller screens */
+@media screen and (max-width: 768px) {
+    .feature-container {
+        flex-direction: column;
+    }
+
+    .feature-container.reverse {
+        flex-direction: column;
+    }
+
+    .feature-text, .feature-image {
+        width: 100%;
+    }
+}

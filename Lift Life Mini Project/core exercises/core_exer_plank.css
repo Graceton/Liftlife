@@ -1,0 +1,193 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #00BFFF, #87CEFA);
+    color: #000;
+}
+
+.navbar {
+    background-color: #00a1f1;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu a, .join-now a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.join-now a {
+    background-color: #1f1cff;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.logo img {
+    border-radius: 10px;
+}
+
+.content {
+    margin-top: 150px;
+    padding: 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 16px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.exercise-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.video-container {
+    background-color: #87cefa;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%; /* Video container takes up more horizontal space */
+    max-width: 600px;
+}
+
+.steps {
+    background-color: #87cefa;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    width: 35%;
+    max-width: 300px;
+}
+
+.steps h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.steps ol {
+    margin-left: 20px;
+}
+
+.input-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.input-field, .output-field {
+    background-color: #00a1f1;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    width: 30%; /* Equal width for each input section */
+    max-width: 250px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.input-field input, .output-field input {
+    width: 80%;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    /* Stack the navbar items vertically */
+    .navbar {
+        flex-direction: column;
+    }
+    
+    /* Adjust content margins */
+    .content {
+        margin-top: 120px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    /* Stack the video and steps section vertically */
+    .exercise-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-container, .steps {
+        width: 90%; /* Use most of the screen width */
+        max-width: 500px;
+        margin-bottom: 20px;
+    }
+
+    /* Stack the input fields vertically and reduce padding */
+    .input-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-field, .output-field {
+        width: 90%; /* Use most of the screen width */
+        max-width: 400px;
+        margin-bottom: 15px;
+        padding: 15px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Reduce font size and spacing for very small screens */
+    h1 {
+        font-size: 24px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .steps h2 {
+        font-size: 16px;
+    }
+
+    /* Further reduce input field and output field padding */
+    .input-field, .output-field {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .video-container iframe {
+        height: 200px; /* Reduce video height for smaller screens */
+    }
+}

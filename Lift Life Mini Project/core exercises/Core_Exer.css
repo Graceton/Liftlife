@@ -1,0 +1,103 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #00BFFF, #87CEFA);
+    color: #000;
+}
+
+.navbar {
+    background-color: #00a1f1;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu a, .join-now a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.join-now a {
+    background-color: #1f1cff;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.logo img {
+    border-radius: 10px;
+}
+
+.content {
+    margin-top: 120px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.exercise {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0000ff;
+    padding: 15px; /* Increased padding for a thicker appearance */
+    border-radius: 10px;
+    margin: 15px 20px;
+    color: white;
+}
+
+.exercise-info {
+    display: flex;
+    align-items: center;
+}
+
+.exercise-image {
+    width: 60px;  /* Fixed width for images */
+    height: 60px; /* Fixed height for images */
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.exercise-name {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.exercise-name:hover {
+    color: #cccccc;        
+}
+
+.exercise-input label {
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.exercise-input input {
+    width: 60px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+}

@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    text-align: center;
+}
+
+.logo-image {
+    max-width: 200px; /* Adjust the size of the logo */
+    margin-bottom: 20px; /* Space between the logo and the form box */
+}
+
+.form-box {
+    width: 300px;
+    background: orange;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.button-box {
+    width: 100%;
+    background: #000;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Space between buttons and the input fields */
+}
+
+.toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+#btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: orange;
+    border-radius: 10px;
+    transition: 0.5s;
+    z-index: 0;
+}
+
+.input-group {
+    display: none;
+    flex-direction: column;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#login {
+    display: block;
+}
+
+#signup {
+    display: none;
+}
